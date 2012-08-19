@@ -1,0 +1,29 @@
+name: AvatarCraft
+main: com.github.pfacheris.AvatarCraft.AvatarCraft
+version: 1.2
+depend: [Vault,MagicSpells]
+commands:
+    avatar:
+      description: avatar management
+      usage: /avatar [new,reload]
+      permission: AvatarCraft.Admin
+      permission-message: You are not an AvatarCraft admin!
+permissions:
+    AvatarCraft.Airbender:
+        description: Negates player fall damage, increases sprint speed, and doubles jump height.
+        default: false
+    AvatarCraft.Waterbender:
+        description: Negates player drowning damage, hold shift to move quickly though water.
+        default: false
+    AvatarCraft.Firebender:
+        description: Negates player fire tick damage.
+        default: false
+    AvatarCraft.Earthbender:
+        description: Negates player suffocation damage, player takes reduced damage, hold shift and look up to climb walls.
+        default: false
+    AvatarCraft.Nonbender:
+        description: Marks a player as a nonbender.
+        default: false
+    AvatarCraft.Admin:
+        description: Marks player as an admin.
+        default: op
